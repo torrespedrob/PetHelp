@@ -1,3 +1,2 @@
 # PetHelp
-PetHelp es una aplicación que te mantendrá al corriente de las necesidades de tus mascotas.
-Guarda, modifica y elimina fechas, vacunas, mascotas y demás datos importantes.
+PetHelp es una aplicación JSP que te permite almacenar, editar y eliminar datos de tus mascotas, recordatorios y tu perfil personal.
