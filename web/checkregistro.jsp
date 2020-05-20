@@ -8,40 +8,41 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-  String usuario;
-  String contrasena;
-  String correo;
+    String usuario;
+    String contrasena;
+    String correo;
+    String existeusuario = (String)session.getAttribute("existeusuario");
 
-  MessageDigest md = MessageDigest.getInstance("MD5");
+    MessageDigest md = MessageDigest.getInstance("MD5");
 
-  
-  usuario = request.getParameter("usuario");
-  contrasena = request.getParameter("contrasena");
-  correo = request.getParameter("correo");
+    usuario = request.getParameter("usuario");
+    contrasena = request.getParameter("contrasena");
+    correo = request.getParameter("correo");
 
-  md.update(request.getParameter("contrasena").getBytes());
-  String hash = DatatypeConverter.printHexBinary(md.digest());
-  
-  Class.forName("com.mysql.jdbc.Driver");
-  Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pethelp", "root", "");
-  Statement s = conexion.createStatement();
-  ResultSet listado = s.executeQuery("SELECT * FROM usuario");
-  String codigoUsuario = "";
+    md.update(request.getParameter("contrasena").getBytes());
+    String hash = DatatypeConverter.printHexBinary(md.digest());
 
-  ArrayList <String> usuarios = new ArrayList ();
-  while (listado.next()) {
-    String nombreUsuario = listado.getString("NomUsu");
-    codigoUsuario = listado.getString("CodUsu");
-    usuarios.add(nombreUsuario);
-  }
-  
-  if (usuarios.contains(usuario)) {
-    response.sendRedirect("login.jsp");
-  } else {
-    session.setAttribute("usuario", usuario);
-    session.setAttribute("codigoUsuario", codigoUsuario);
-    s.execute("INSERT INTO `usuario`(NomUsu,ConUsu,CorUsu) VALUE ('" + usuario + "','" + hash + "','" + correo +"')");
-      response.sendRedirect("index.jsp");
-  }
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pethelp", "root", "");
+    Statement s = conexion.createStatement();
+    ResultSet listado = s.executeQuery("SELECT * FROM usuario");
+    String codigoUsuario = "";
+
+    ArrayList<String> usuarios = new ArrayList();
+    while (listado.next()) {
+        String nombreUsuario = listado.getString("NomUsu");
+        codigoUsuario = listado.getString("CodUsu");
+        usuarios.add(nombreUsuario);
+    }
+
+    if (usuarios.contains(usuario)) {
+        session.setAttribute("existeusuario", "existe");
+        response.sendRedirect("login.jsp");
+    } else {
+        session.setAttribute("usuario", usuario);
+        session.setAttribute("codigoUsuario", codigoUsuario);
+        s.execute("INSERT INTO `usuario`(NomUsu,ConUsu,CorUsu) VALUE ('" + usuario + "','" + hash + "','" + correo + "')");
+        response.sendRedirect("index.jsp");
+    }
 
 %>

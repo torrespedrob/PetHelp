@@ -28,16 +28,16 @@
       <p class="lead">Modifica los datos de tu recordatorio</p>
       <hr class="my-4">
       <form method="POST" action="updaterecordatorios.jsp">
-        <input type="hidden" name="CodRec" value=<%=CodRec%>>
+        <input type="hidden" name="CodRec" value="<%=CodRec%>">
         <div class="form-group">
           <label for="ejemploNombre">Título:</label>
           <input type="text" name="NomRec" class="form-control"
-                 placeholder="Edita su título" value=<%=NomRec%> required>
+                 placeholder="Edita su título" value="<%=NomRec%>" required>
         </div>
         <div class="form-group">
           <label for="ejemploEspecie">Descripción:</label>
           <input type="text" name="DetRec" class="form-control"
-                 placeholder="Edita la descripción" value=<%=DetRec%> required>
+                 placeholder="Edita la descripción" value="<%=DetRec%>" required>
         </div>
         <button type="submit" class="btn btn-lg btn-primary">Aceptar</button>
         <a href="recordatorios.jsp" class="btn btn-lg btn-secondary">Volver</a>

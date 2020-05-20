@@ -38,8 +38,11 @@
           <input type="text" name="correo" class="form-control"
                  placeholder="Introduce tu correo electrónico" required>
         </div>
-        <button type="submit" class="btn btn-lg btn-primary">Aceptar</a>
+          <button type="submit" class="btn btn-lg btn-primary">Aceptar</button>
+          <a href="index.jsp" class="btn btn-lg btn-secondary">Volver</a>
       </form>
+      <br>
+      ¿Ya estás registrado? <a href="login.jsp">Inicia sesión</a>
     </div>
 
   </body>
