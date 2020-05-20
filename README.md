@@ -23,7 +23,7 @@ El programa encripta las contraseñas y las compara a la hora de iniciar sesión
 ## Capturas
 ![editar_mascotas](https://github.com/torrespedrob/PetHelp/blob/master/edita_mascota.png)
 ![editar_recordatorios](https://github.com/torrespedrob/PetHelp/blob/master/edita_recordatorio.png)
-![login](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_login.png)
+![login](https://github.com/torrespedrob/PetHelp/blob/master/nuevologin.png)
 ![registro](https://github.com/torrespedrob/PetHelp/blob/master/nuevoregistro.png)
 ## Nueva funcionalidad extra
 El programa ahora nos muestra una advertencia si intentamos crear un usuario ya existente, además de no permitir su registro.
