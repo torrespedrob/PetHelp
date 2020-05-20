@@ -1,6 +1,7 @@
 # PetHelp
 PetHelp es una aplicación JSP que te permite almacenar, editar y eliminar datos de tus mascotas y recordatorios. Funciona como agenda personal, mostrando sólo los resultados del usuario registrado. Esta aplicación usa encriptación de contraseñas mediante MD5.
 * [Vídeo demostración de PetHelp](https://youtu.be/INAXblOiC7k)
+
 ![PetHelp Index](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_index.png)
 ## Estructura
 Consiste de 3 páginas principales: **index**, **lista de mascotas** y **lista de recordatorios**. Un usuario no logueado solo tendrá acceso al index, y en caso de quere acceder a otra página, será redireccionado y no se cargarán los contenidos de esta. Los usuarios logueados solo podrán ver sus contenidos, y no los de otros usuarios.
