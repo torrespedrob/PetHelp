@@ -17,6 +17,7 @@ Dispone de 3 tablas: **usuario**, **mascota** y **recordatorio**. Un usuario pue
 * Impedir el acceso a usuarios no registrados y limitar las opciones de los registrados.
 ## Encriptación por MD5
 El programa encripta las contraseñas y las compara a la hora de iniciar sesión. De esta forma, la contraseña de ejemplo de Pepe: 1234, no estará en plain text en la base de datos.
+
 ![md5](https://github.com/torrespedrob/PetHelp/blob/master/md5.png)
 ## Capturas
 ![editar_mascotas](https://github.com/torrespedrob/PetHelp/blob/master/edita_mascotas.png)
