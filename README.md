@@ -14,3 +14,8 @@ Dispone de 3 tablas: **usuario**, **mascota** y **recordatorio**. Un usuario pue
 * Crear nuevas mascotas, modificarlas o eliminarlas.
 * Crear recordatorios, modificarlos o eliminarlos.
 * Impedir el acceso a usuarios no registrados y limitar las opciones de los registrados.
+## Capturas
+![editar_mascotas](https://github.com/torrespedrob/PetHelp/blob/master/edita_mascotas.png)
+![editar_recordatorios](https://github.com/torrespedrob/PetHelp/blob/master/edita_recordatorios.png)
+![login](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_login.png)
+![registro](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_registro.png)
