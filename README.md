@@ -20,11 +20,11 @@ El programa encripta las contraseñas y las compara a la hora de iniciar sesión
 
 ![md5](https://github.com/torrespedrob/PetHelp/blob/master/md5.png)
 ## Capturas
-![editar_mascotas](https://github.com/torrespedrob/PetHelp/blob/master/edita_mascotas.png)
-![editar_recordatorios](https://github.com/torrespedrob/PetHelp/blob/master/edita_recordatorios.png)
+![editar_mascotas](https://github.com/torrespedrob/PetHelp/blob/master/edita_mascota.png)
+![editar_recordatorios](https://github.com/torrespedrob/PetHelp/blob/master/edita_recordatorio.png)
 ![login](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_login.png)
 ![registro](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_registro.png)
 ## Tecnologías utilizadas
-[Bootswatch](https://bootswatch.com) - Bootstrap con temas personalizados.
-[Line Awesome](https://icons8.com/line-awesome) - Fuente de iconos Open-source alternativa a Font Awesome.
-[phpmyadmin](https://www.apachefriends.org/es/index.html) - Incluido en Xampp, manejo de la base de datos.
+* [Bootswatch](https://bootswatch.com) - Bootstrap con temas personalizados.
+* [Line Awesome](https://icons8.com/line-awesome) - Fuente de iconos Open-source alternativa a Font Awesome.
+* [phpmyadmin](https://www.apachefriends.org/es/index.html) - Incluido en Xampp, manejo de la base de datos.
