@@ -30,6 +30,10 @@ El programa ahora nos muestra una advertencia si intentamos crear un usuario ya 
 
 ![avisoregistro](https://github.com/torrespedrob/PetHelp/blob/master/alert.png)
 
+El programa muestra un aviso si el login no se realiza con éxito.
+
+![avisologin](https://github.com/torrespedrob/PetHelp/blob/master/loginfallido.png)
+
 Añadidas nuevas opciones para permitir a los usuarios iniciar sesión en el apartado de registro y permitir a los usuarios registrarse en caso de no tener una cuenta en el apartado de login.
 
 ![nuevologin](https://github.com/torrespedrob/PetHelp/blob/master/nuevologin.png)
