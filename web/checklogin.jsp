@@ -34,7 +34,7 @@
     session.setAttribute("failedlogin", "");
     response.sendRedirect("index.jsp");
   } else {
-    session.setAttribute("failedlogin", "failed");
+    session.setAttribute("failedlogin", "fallado");
     response.sendRedirect("login.jsp");
   }
 

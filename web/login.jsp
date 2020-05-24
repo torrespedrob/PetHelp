@@ -16,24 +16,24 @@
             if (session.getAttribute("usuario") != null) {
                 response.sendRedirect("index.jsp");
             }
-            String algo = (String) session.getAttribute("existeusuario");
-            String comprueba = (String) session.getAttribute("failedlogin");
-
         %>
-        <h1><%=algo%></h1>
+        <h1></h1>
         <div class="jumbotron">
             <h1 class="display-3">Iniciar sesión</h1>
             <p class="lead">Introduce tus credenciales para poder usar la aplicación</p>
             <hr class="my-4">
-            <%
-                if (algo != "") {
+            <%                
+                if (session.getAttribute("existeusuario") == "yaexiste") {
             %>
             <div class="alert alert-dismissible alert-danger">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <strong>¡Error! </strong>Has intentado registrar un usuario que ya existe. Prueba a iniciar sesión.
             </div>
+            <%
+                session.setAttribute("existeusuario", "noexiste");
+                }
+            %>
 
-         
             <form method="POST" action="checklogin.jsp">
                 <div class="form-group">
                     <label for="ejemploNombre">Nombre de usuario:</label>
@@ -45,13 +45,16 @@
                     <input type="password" name="contrasena" class="form-control"
                            placeholder="Introduce tu contraseña" required>
                 </div>
-                
-                <div class="alert alert-danger">
-                <strong>¡Error! </strong>Usuario o contraseña incorrectos
-            </div>
                 <%
-                    session.setAttribute("failedlogin", "");
-  }
+                    if (session.getAttribute("failedlogin") == "fallado") {
+                %>
+                <div class="alert alert-danger">
+                    <strong>¡Error! </strong>Usuario o contraseña incorrectos
+                </div>
+                <%
+                            
+                            session.setAttribute("failedlogin", "");
+                        }
 
                 %>
 
