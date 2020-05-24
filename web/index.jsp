@@ -49,6 +49,7 @@
                         <%
                         } else {
                             session.setAttribute("existeusuario", "");
+                            session.setAttribute("failedlogin", "");
                         %>
                         <a href="mascotas.jsp" class="btn btn-success btn-lg"><i class="las la-dog"></i> Mis mascotas</a>
                         <a href="recordatorios.jsp" class="btn btn-primary btn-lg"><i class="las la-book"></i> Mis recordatorios</a><br><br>

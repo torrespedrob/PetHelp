@@ -31,9 +31,11 @@
 
   if (usuarios.containsKey(usuario) && (usuarios.get(usuario).equals(hash))) {
     session.setAttribute("usuario", usuario);
+    session.setAttribute("failedlogin", "");
     response.sendRedirect("index.jsp");
   } else {
-    response.sendRedirect("index.jsp");
+    session.setAttribute("failedlogin", "failed");
+    response.sendRedirect("login.jsp");
   }
 
 %>
