@@ -37,7 +37,7 @@
 
     if (usuarios.contains(usuario)) {
         session.setAttribute("existeusuario", "yaexiste");
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("registro.jsp");
     } else {
         session.setAttribute("usuario", usuario);
         session.setAttribute("codigoUsuario", codigoUsuario);
