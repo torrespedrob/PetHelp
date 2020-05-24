@@ -28,7 +28,7 @@ El programa encripta las contraseñas y las compara a la hora de iniciar sesión
 ## Nueva funcionalidad extra
 El programa ahora nos muestra una advertencia si intentamos crear un usuario ya existente, además de no permitir su registro.
 
-![avisoregistro](https://github.com/torrespedrob/PetHelp/blob/master/alert.png)
+![avisoregistro](https://github.com/torrespedrob/PetHelp/blob/master/registroyaexiste.png)
 
 El programa muestra un aviso si el login no se realiza con éxito.
 
