@@ -8,7 +8,8 @@ Consiste de 3 páginas principales: **index**, **lista de mascotas** y **lista d
 ![mascotas](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_mascotas.png)
 ![recordatorios](https://github.com/torrespedrob/PetHelp/blob/master/pethelp_recordatorios.png)
 ## Base de datos
-Dispone de 3 tablas: **usuario**, **mascota** y **recordatorio**. Un usuario puede tener o no mascotas o recordatorios (al registrarse no tendrá ninguno de ellos). A una mascota le corresponde un usuario, y un recordatorio le corresponde a un usuario. La base de datos incluye datos de ejemplo para poder demostrar el correcto funcionamiento de la aplicación.
+Dispone de 3 tablas: **usuario**, **mascota** y **recordatorio**. Un usuario puede tener o no mascotas o recordatorios (al registrarse no tendrá ninguno de ellos). A una mascota le corresponde un usuario, y un recordatorio le corresponde a un usuario. La base de datos incluye datos de ejemplo para poder demostrar el correcto funcionamiento de la  aplicación.
+
 ![sql](https://github.com/torrespedrob/PetHelp/blob/master/sql.png)
 ## Funciones principales
 * Crear usuarios o loguearse como uno ya existente. Darse de baja.
